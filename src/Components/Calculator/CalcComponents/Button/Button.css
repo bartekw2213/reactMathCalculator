@@ -1,0 +1,60 @@
+.ButtonContainer {
+  position: relative;
+  border-radius: 15px;
+  transition: transform ease-out 0.1s;
+}
+
+.ButtonContainer.Huge {
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 3;
+  grid-column-start: 4;
+}
+
+.Button {
+  position: absolute;
+  width: 100%;
+  z-index: 4;
+  background-color: inherit;
+  border-radius: inherit;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.ButtonFirstShadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: inherit;
+}
+
+.ButtonSecondShadow {
+  position: absolute;
+  height: 100%;
+  width: 104%;
+  top: 10%;
+  left: -2%;
+  z-index: 2;
+  background-color: var(--calcDarker);
+  border-radius: inherit;
+}
+
+.ButtonContainer:active {
+  transform: translateY(2px);
+}
+
+.ButtonContainer:active .ButtonSecondShadow {
+  transform: translateY(-2px);
+}

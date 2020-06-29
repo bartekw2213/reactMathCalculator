@@ -1,0 +1,8 @@
+.Keyboard {
+  margin-top: 2rem;
+  height: 100%;
+  display: grid;
+  grid-gap: 7px;
+  grid-template-columns: repeat(5, 1fr);
+  font-family: 'Coolvetica-Compressed';
+}
