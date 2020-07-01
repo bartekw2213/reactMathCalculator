@@ -48,3 +48,7 @@
   background-color: var(--calcDarker);
   border-radius: 20px;
 }
+
+.exponentialEnd {
+  color: #727d75;
+}
