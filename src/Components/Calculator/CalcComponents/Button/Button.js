@@ -2,7 +2,7 @@ import React from 'react';
 import './Button.css';
 import getBtnStylesFromProps from './getBtnStylesFromProps';
 
-const Button = ({ size, color, children }) => {
+const Button = ({ size, color, action, children, onBtnClick }) => {
   const style = getBtnStylesFromProps(size, color);
 
   return (
@@ -15,7 +15,11 @@ const Button = ({ size, color, children }) => {
       }}
       className={size === 'huge' ? 'ButtonContainer Huge' : 'ButtonContainer'}
     >
-      <div className='Button' style={{ height: style.buttonHeight }}>
+      <div
+        onClick={() => onBtnClick(action)}
+        className='Button'
+        style={{ height: style.buttonHeight }}
+      >
         {children === 'root' ? '\u221A' : children}
       </div>
       <div className='ButtonFirstShadow'></div>

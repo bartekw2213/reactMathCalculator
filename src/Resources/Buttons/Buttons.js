@@ -1,6 +1,6 @@
 export default [
   {
-    action: 'MRC',
+    action: 'MR',
     color: 'light',
     position: 1,
     size: 'small',
@@ -30,19 +30,19 @@ export default [
     size: 'small',
   },
   {
-    action: '7',
+    action: 7,
     color: 'dark',
     position: 6,
     size: 'normal',
   },
   {
-    action: '8',
+    action: 8,
     color: 'dark',
     position: 7,
     size: 'normal',
   },
   {
-    action: '9',
+    action: 9,
     color: 'dark',
     position: 8,
     size: 'normal',
@@ -60,19 +60,19 @@ export default [
     size: 'normal',
   },
   {
-    action: '4',
+    action: 4,
     color: 'dark',
     position: 11,
     size: 'normal',
   },
   {
-    action: '5',
+    action: 5,
     color: 'dark',
     position: 12,
     size: 'normal',
   },
   {
-    action: '6',
+    action: 6,
     color: 'dark',
     position: 13,
     size: 'normal',
@@ -90,19 +90,19 @@ export default [
     size: 'normal',
   },
   {
-    action: '1',
+    action: 1,
     color: 'dark',
     position: 16,
     size: 'normal',
   },
   {
-    action: '2',
+    action: 2,
     color: 'dark',
     position: 17,
     size: 'normal',
   },
   {
-    action: '3',
+    action: 3,
     color: 'dark',
     position: 18,
     size: 'normal',
@@ -120,7 +120,7 @@ export default [
     size: 'normal',
   },
   {
-    action: '0',
+    action: 0,
     color: 'dark',
     position: 21,
     size: 'normal',
