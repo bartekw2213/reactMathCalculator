@@ -330,3 +330,18 @@
     597px 597px var(--calcShadow), 598px 598px var(--calcShadow),
     599px 599px var(--calcShadow);
 }
+
+@media (max-width: 550px) {
+  .CalculatorContainer {
+    height: 550px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .CalculatorContainer {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+  }
+}

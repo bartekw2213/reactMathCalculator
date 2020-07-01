@@ -24,7 +24,7 @@ export default (size, color) => {
   switch (size) {
     case 'small':
       containerHeight = '50px';
-      fontSize = '2rem';
+      fontSize = window.innerWidth < 400 ? '1.5rem' : '2rem';
       buttonHeight = '90%';
       buttonSecondShadow = '100%';
       break;
