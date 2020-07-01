@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Calculator.css';
 
+import Title from '../UI/Title';
 import Display from './CalcComponents/Display/Display';
 import Keyboard from './Keyboard/Keyboard';
 
@@ -24,6 +25,7 @@ const Calculator = () => {
 
   return (
     <div className='CalculatorContainer'>
+      <Title />
       <div className='Calculator'>
         <Display value={currentVal} />
         <Keyboard onBtnClick={handleOperation} />

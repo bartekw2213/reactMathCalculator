@@ -1,7 +1,7 @@
 .Title {
-  position: fixed;
-  left: 50px;
-  top: 200px;
+  position: absolute;
+  left: -90%;
+  top: 10%;
   font-family: 'Coolvetica-Compressed', sans-serif;
   letter-spacing: 3px;
   color: #e3c902;
