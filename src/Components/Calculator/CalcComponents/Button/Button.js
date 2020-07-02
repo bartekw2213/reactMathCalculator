@@ -16,6 +16,7 @@ const Button = ({ size, color, action, children, onBtnClick }) => {
       className={size === 'huge' ? 'ButtonContainer Huge' : 'ButtonContainer'}
     >
       <div
+        id={typeof action === 'number' ? `number${action}` : action}
         onClick={() => onBtnClick(action)}
         className='Button'
         style={{ height: style.buttonHeight }}
