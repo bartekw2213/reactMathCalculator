@@ -4,7 +4,7 @@ import './Keyboard.css';
 import Button from '../CalcComponents/Button/Button';
 import ButtonsArr from '../../../Resources/Buttons/Buttons';
 
-const Keyboard = ({ onBtnClick }) => {
+const Keyboard = React.memo(({ onBtnClick }) => {
   const Buttons = ButtonsArr.sort((a, b) => a.position - b.position).map(
     ({ position, size, action, color, id }) => (
       <Button
@@ -21,6 +21,6 @@ const Keyboard = ({ onBtnClick }) => {
   );
 
   return <div className='Keyboard'>{Buttons}</div>;
-};
+});
 
 export default Keyboard;

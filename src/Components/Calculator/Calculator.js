@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './Calculator.css';
 
 import Title from '../UI/Title';
@@ -15,13 +15,20 @@ const Calculator = () => {
     setEngine(new CalculatorEngine());
   }, []);
 
-  const handleOperation = (operation) => {
-    if (typeof operation === 'number') {
-      setCurrentVal(engine.handleNumber(operation, Number(currentVal)));
-    } else {
-      setCurrentVal(engine.handleOperation(operation, Number(currentVal)));
-    }
-  };
+  const handleOperation = useCallback(
+    (operation) => {
+      if (typeof operation === 'number') {
+        setCurrentVal((currVal) =>
+          engine.handleNumber(operation, Number(currVal))
+        );
+      } else {
+        setCurrentVal((currVal) =>
+          engine.handleOperation(operation, Number(currVal))
+        );
+      }
+    },
+    [setCurrentVal, engine]
+  );
 
   return (
     <div className='CalculatorContainer'>

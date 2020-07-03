@@ -4,7 +4,7 @@ import getBtnStylesFromProps from './getBtnStylesFromProps';
 
 const Button = ({ size, color, action, children, onBtnClick, id }) => {
   const style = getBtnStylesFromProps(size, color);
-
+  console.log(123);
   return (
     <div
       style={{
