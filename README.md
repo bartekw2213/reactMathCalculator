@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 It's simple math calculator created with react.
-#### [Create React App](https://app.netlify.com/sites/bartekw2213-react-calculator/deploys/5efef30eb376c88ce5350c1b)
+#### [Link to Application](https://app.netlify.com/sites/bartekw2213-react-calculator/deploys/5efef30eb376c88ce5350c1b)
 
 
 ### `npm start`
