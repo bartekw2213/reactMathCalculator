@@ -67,7 +67,7 @@ export default [
     color: 'light',
     position: 10,
     size: 'normal',
-    id: 'root',
+    id: 'squareRoot',
   },
   {
     action: 4,
